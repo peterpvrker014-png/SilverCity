@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Silver City</title>
+  
+  <!-- Google Fonts: Orbitron for creative/fun futuristic title -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #ffffff;
+      background-color: #000000;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background-image: 
+        linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)),
+        url('https://images.unsplash.com/photo-1557683316-973673baf926?auto=format&fit=crop&q=80') /* fallback */;
+        /* Better silver-metallic-cyberpunk option: shiny reflective towers & neon */
+        /* You can swap to: https://images.unsplash.com/photo-1553356084-58ef4a67b2a7?auto=format&fit=crop&q=80&w=2000 (more chrome/silver feel) */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+
+    .container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+
+    h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-weight: 900;
+      font-size: 5.5rem;
+      color: #ff0000; /* Vibrant red */
+      text-shadow: 
+        0 0 15px rgba(255,0,0,0.9),
+        0 0 30px rgba(255,0,0,0.6),
+        0 0 50px rgba(255,0,0,0.4);
+      margin-bottom: 0.2em;
+      letter-spacing: 6px;
+      line-height: 1;
+    }
+
+
+    .tagline {
+      font-family: 'Orbitron', sans-serif;
+      font-weight: 700;
+      font-size: 2.2rem;
+      color: #ffffff;
+      text-shadow: 0 0 20px rgba(255,255,255,0.5);
+      margin-bottom: 4rem;
+      letter-spacing: 3px;
+    }
+
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.8rem;
+      justify-content: center;
+      margin-bottom: 5rem;
+    }
+
+
+    .btn {
+      display: inline-block;
+      padding: 1.2rem 3rem;
+      font-size: 1.4rem;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      border: none;
+      position: relative;
+      overflow: hidden;
+    }
+
+
+    /* White & Blue-ish buttons per your original request, but adjusted for contrast */
+    .btn-spotify { background: #1DB954; color: white; }
+    .btn-youtube { background: #FF0000; color: white; }
+    .btn-apple { background: #000000; color: white; border: 2px solid #ffffff; }
+
+
+    .btn:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.7);
+    }
+
+
+    .btn:active {
+      transform: scale(0.90);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.9);
+      filter: brightness(1.15);
+    }
+
+
+    footer {
+      padding: 2.5rem;
+      text-align: center;
+      color: #aaaaaa;
+      font-size: 1.1rem;
+      border-top: 1px solid #333;
+      background: rgba(0,0,0,0.7);
+    }
+
+
+    a.email {
+      color: #ff4444;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+
+    a.email:hover {
+      text-decoration: underline;
+      color: #ff7777;
+    }
+
+
+    @media (max-width: 768px) {
+      h1 { font-size: 4rem; }
+      .tagline { font-size: 1.8rem; }
+      .btn { padding: 1rem 2.5rem; font-size: 1.3rem; }
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="container">
+    <h1>SILVER CITY</h1>
+    <div class="tagline">The Future Of Vibration</div>
+
+
+    <div class="buttons">
+      <a href="https://open.spotify.com/artist/2vIhMOa3U48zP6Q9SC2zRz?si=NqtzT4LZSlGhXo4Uf_OKxg" 
+         target="_blank" class="btn btn-spotify">Spotify</a>
+      
+      <a href="https://youtube.com/channel/UCB81qJdKMIqMR74A0SemzXw?si=K1pIB-Kp4baS_oi2" 
+         target="_blank" class="btn btn-youtube">YouTube</a>
+      
+      <a href="https://music.apple.com/za/artist/peter-pvrk3r/1686813371" 
+         target="_blank" class="btn btn-apple">Apple Music</a>
+    </div>
+  </div>
+
+
+  <footer>
+    <p>Contact: <a href="mailto:peterpvrker014@gmail.com" class="email">peterpvrker014@gmail.com</a></p>
+  </footer>
+
+
+</body>
+</html>
